@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: "configserver"
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        #search-locations: "classpath:/config"
+        #search-locations: "file:////C//chung//Documents//config_microservice//config"
+        search-locations: "file:////Users//chung//Documents//config_microservice//config"
+
+server:
+  port: 8071

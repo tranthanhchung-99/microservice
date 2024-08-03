@@ -1,0 +1,13 @@
+
+
+build:
+  version: "2.0"
+
+loans:
+  message : "message demo loans QA"
+  contactDetails:
+    name: "name"
+    email: "email@gmail.com"
+  onCallSupport :
+    - 0987654321
+    - 0987654322
