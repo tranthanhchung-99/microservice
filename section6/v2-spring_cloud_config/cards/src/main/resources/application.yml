@@ -21,16 +21,16 @@ spring:
     import: "optional:configserver:http://localhost:8071"
 
   profiles:
-    active:
-      - "prod"
-build:
-  version: "3.0"
+    active: "prod"
 
-cards:
-  message: "message for card demo"
-  contactDetails:
-    name: "name"
-    email: "email@gmail.com"
-  onSupportCall:
-    - 0987654321
-    - 0987654322
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

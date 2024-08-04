@@ -21,6 +21,10 @@
 	</properties>
 	<dependencies>
 		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
@@ -93,7 +97,7 @@
 				<version>3.3.2</version>
 				<configuration>
 					<to>
-						<image>tranthanhchung99/${project.artifactId}:s4</image>
+						<image>tranthanhchung99/${project.artifactId}:s6</image>
 					</to>
 				</configuration>
 			</plugin>

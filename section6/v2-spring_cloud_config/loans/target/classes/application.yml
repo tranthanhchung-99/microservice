@@ -3,6 +3,8 @@ server:
 spring:
   application:
     name: "loans"
+  profiles:
+    active: "prod"
   datasource:
     url: jdbc:h2:mem:testdb
     driverClassName: org.h2.Driver
@@ -16,21 +18,18 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-
-  profiles:
-    active: "qa"
-
   config:
-    import: "optional:configserver:http://localhost:8071"
-
+    import: "optional:configserver:http://localhost:8071/"
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
 build:
   version: "3.0"
 
-loans:
-  message : "message demo  loans "
-  contactDetails:
-    name: "name"
-    email: "email@gmail.com"
-  onCallSupport :
-    - 0987654321
-    - 0987654322
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
