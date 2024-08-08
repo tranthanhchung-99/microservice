@@ -1,0 +1,12 @@
+
+build:
+  version: "2.0"
+
+account:
+  message: "message demo qa"
+  contactDetail:
+    email: "demo_qa_email@gmail.com"
+    name: "TranThanhChung-99"
+  onCallSupport:
+    - 0942358876
+    - 0942357765

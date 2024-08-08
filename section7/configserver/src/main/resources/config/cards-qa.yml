@@ -1,0 +1,12 @@
+
+build:
+  version: "2.0"
+
+cards:
+  message: "message for card demo QA"
+  contactDetails:
+    name: "name QA"
+    email: "email_qa_@gmail.com"
+  onSupportCall:
+    - 0987654321
+    - 0987654322

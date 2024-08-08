@@ -1,0 +1,12 @@
+
+build:
+  version: "3.0"
+
+cards:
+  message: "message for card demo"
+  contactDetails:
+    name: "name"
+    email: "email@gmail.com"
+  onSupportCall:
+    - 0987654321
+    - 0987654322
