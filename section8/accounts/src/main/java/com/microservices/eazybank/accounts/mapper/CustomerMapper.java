@@ -2,6 +2,7 @@ package com.microservices.eazybank.accounts.mapper;
 
 import com.microservices.eazybank.accounts.entity.Customer;
 import com.microservices.eazybank.accounts.model.CustomerDTO;
+import com.microservices.eazybank.accounts.model.CustomerdetailDto;
 
 public class CustomerMapper {
 
@@ -32,5 +33,20 @@ public class CustomerMapper {
     customerDTO.setEmail(customer.getEmail());
     customerDTO.setMobileNumber(customer.getMobileNumber());
     return customerDTO;
+  }
+
+  /**
+   * @author: TranThanhChung-99
+   * @since: 20/07/2024 21:08
+   * @description: convert from Customer to customerdetailDto
+   * @param: Source customer , Target customerdetailDto
+   * @returns: Target customerdetailDto
+   */
+  public static CustomerdetailDto ConvertToCustomerDetailsDTO(Customer customer,
+      CustomerdetailDto customerdetailDto) {
+    customerdetailDto.setName(customer.getName());
+    customerdetailDto.setEmail(customer.getEmail());
+    customerdetailDto.setMobileNumber(customer.getMobileNumber());
+    return customerdetailDto;
   }
 }

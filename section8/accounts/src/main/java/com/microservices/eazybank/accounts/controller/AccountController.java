@@ -63,7 +63,7 @@ public class AccountController {
       responseCode = "201",
       description = "HTTP status CREATED"
   )
-  @PostMapping("/create-account")
+  @PostMapping("/create")
   public ResponseEntity<ResponseDTO> createAccount(
       @Valid
       @RequestBody CustomerDTO customerDTO) {
@@ -111,7 +111,7 @@ public class AccountController {
       )}
   )
 
-  @PutMapping("/update-account")
+  @PutMapping("/update")
   public ResponseEntity<ResponseDTO> updateAccount(
       @Valid
       @RequestBody CustomerDTO customerDTO) {
@@ -147,7 +147,7 @@ public class AccountController {
           )
       )}
   )
-  @DeleteMapping("/delete-account")
+  @DeleteMapping("/delete")
   public ResponseEntity<ResponseDTO> updateAccount(
       @RequestParam
       @Pattern(regexp = "(^$|[0-9]{10})", message = "Mobile number must be 10 digits.")
