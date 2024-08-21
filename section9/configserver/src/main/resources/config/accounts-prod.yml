@@ -1,0 +1,12 @@
+
+build:
+  version: "1.0"
+
+account:
+  message: "message demo product"
+  contactDetail:
+    email: "demo_pro_email@gmail.com"
+    name: "TranThanhChung-99"
+  onCallSupport:
+    - 0942358876
+    - 0942357765

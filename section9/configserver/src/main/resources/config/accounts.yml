@@ -1,0 +1,12 @@
+#spring.application.name=accounts
+build:
+  version: "3.0"
+
+account:
+  message: "message demo"
+  contactDetail:
+    email: "demoemail@gmail.com"
+    name: "TranThanhChung-99"
+  onCallSupport:
+    - 0942358876
+    - 0942357765
